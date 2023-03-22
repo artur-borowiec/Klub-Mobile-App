@@ -1,11 +1,10 @@
 package pl.klubmobile.klubmobileapp.feature.calendar.data
 
-import kotlinx.coroutines.flow.flowOf
 import pl.klubmobile.klubmobileapp.feature.calendar.domain.repository.EventsRepository
 
 class EventsRepositoryImpl : EventsRepository {
 
-    override fun getEvents() = flowOf(MockedEvents)
+    override fun getEvents() = MockedEvents
 }
 
 data class Event(

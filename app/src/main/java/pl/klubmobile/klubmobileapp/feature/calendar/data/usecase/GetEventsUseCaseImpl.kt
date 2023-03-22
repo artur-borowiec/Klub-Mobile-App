@@ -8,5 +8,5 @@ class GetEventsUseCaseImpl(
     private val repository: EventsRepository = EventsRepositoryImpl()
 ): GetEventsUseCase {
 
-    operator fun invoke() = repository.getEvents()
+    override operator fun invoke() = repository.getEvents()
 }
