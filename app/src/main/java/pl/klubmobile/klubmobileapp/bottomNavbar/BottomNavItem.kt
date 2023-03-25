@@ -6,4 +6,5 @@ import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class BottomNavItem(var label: String, var icon: ImageVector) {
     object AboutClub : BottomNavItem(label = "About Club", icon = Icons.Filled.Info)
+    object Calendar : BottomNavItem(label = "Calendar", icon = Icons.Filled.Info)
 }

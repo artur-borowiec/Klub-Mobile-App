@@ -44,7 +44,11 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun BottomNavBar() {
     var selectedItem by remember { mutableStateOf(0) }
-    val items = listOf(BottomNavItem.AboutClub)
+    val items = listOf(
+        BottomNavItem.AboutClub,
+        BottomNavItem.Calendar
+    )
+
     BottomNavigation {
         items.forEachIndexed { index, item ->
             BottomNavigationItem(
